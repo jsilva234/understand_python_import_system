@@ -73,3 +73,10 @@ if __name__ == "__main__":
 
     assert settings_builtins != builtins, "Module' builtins != the builtin module"
     assert isinstance(settings_builtins, dict), "modules' __builtins__ is a dict"
+
+    print("### custom packages")
+    print("### custom packages")
+    print("### custom packages")
+
+    from fake_package.im_part_of_fake_package import fake_func
+    fake_func()
